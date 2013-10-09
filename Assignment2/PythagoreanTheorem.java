@@ -6,10 +6,16 @@
  * This file is the starter file for the PythagoreanTheorem problem.
  */
 
+import com.sun.corba.se.spi.orbutil.fsm.Input;
+
 import acm.program.*;
 
 public class PythagoreanTheorem extends ConsoleProgram {
 	public void run() {
-		/* You fill this in */
-	}
+		println("Enter values to compute the Pythagorean theorem.");
+		double a = readDouble("a: ");
+		double b = readDouble("b: ");
+		double c = Math.sqrt(a*a+b*b);
+		println("c = "+c);
+		}
 }

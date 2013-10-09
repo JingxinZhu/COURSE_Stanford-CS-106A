@@ -27,16 +27,16 @@ public class Pyramid extends GraphicsProgram {
 	public void run() {
 		
 		/* x-coordinate for the most left brick of the bottom row */
-		float begin_x = getWidth()/2 - (BRICKS_IN_BASE/2)*BRICK_WIDTH;
+		double begin_x = getWidth()/2 - (BRICKS_IN_BASE/2)*BRICK_WIDTH;
 		
 		/* y-coordinate for the most left brick of the bottom row */
-		float begin_y = getHeight() - BRICK_HEIGHT;
+		double begin_y = getHeight() - BRICK_HEIGHT;
 		
 		/* add bricks row by row from bottom to up */
 		for (int i=BRICKS_IN_BASE; i>0; i--){
 			
 			/* x-coordinates for the first brick of bottom row */
-			float x = begin_x;
+			double x = begin_x;
 			
 			/*add bricks of a specific row from left to right*/
 			for (int j=0; j<i; j++){	
