@@ -72,7 +72,6 @@ public class Breakout extends GraphicsProgram {
 	
 
 	
-
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() {
@@ -197,8 +196,7 @@ public class Breakout extends GraphicsProgram {
 		
 		// 2.3. get the ball bounced
 		bounceBall();
-
-		
+	
 	}
 	
 	/* click to start game */
@@ -337,16 +335,14 @@ public class Breakout extends GraphicsProgram {
 		remove(roundLabel);
 		addLoseLabel();			
 	}
-	
-	/* if none bricks left */
+		
 	private void addLoseLabel(){
 		GLabel loseGLabel  = new GLabel("Oh, You lose!");
 		loseGLabel.setFont("Time-24");
 		add(loseGLabel, (getWidth() - loseGLabel.getWidth())/2, (getHeight() - loseGLabel.getAscent())/2);
 	}
 
-	
-	
+	/* if none bricks left */
 	private void youWin(){
 		remove(roundLabel);
 		remove(score);
@@ -356,8 +352,8 @@ public class Breakout extends GraphicsProgram {
 		remove(click);
 	}
 	
-	/* Private instance variables */
 	
+	/** Private instance variables */
 	private boolean flag;
 	private int num, scores;
 	private GLabel score, click, roundLabel;
