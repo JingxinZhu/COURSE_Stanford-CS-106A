@@ -1,4 +1,4 @@
-Java_CS106
+Stanford-CS-106A
 ==========
 
-Assignments for CS 106 of Stan 
+Assignments for CS 106A of Stanford, to be continued...
