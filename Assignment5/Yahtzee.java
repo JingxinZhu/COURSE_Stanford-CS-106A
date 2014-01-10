@@ -55,7 +55,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 				/* Step 2:  Player can re-roll dice for two more chances */
 				reRoll(dice);
 				
-				/* Step 3:  Player selects an used category for his turn  */
+				/* Step 3:  Player selects an unused category for his turn  */
 				display.printMessage("Select a category for this roll.");
 				int category = selectUnusedCategory(j,scores_record);
 				
@@ -77,7 +77,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 			}
 		}
 		
-		/*       Find winner      */
+		/**************     Find winner   ***************/
 		// Check whether players can earn upper bonus, display 
 		for(int j=0;j<nPlayers; j++){
 			if( scores_record[UPPER_SCORE-1][j] >= 63 )  // if upper scores end up totaling 63 or more, 
@@ -121,7 +121,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		return scores_record;
 	}
 	
-	/**************  Functions for Play Game   ***************/
+	/**************   Functions for Play Game   ***************/
 	/*          Step 1: roll dice for the first time         */ 
 	/* Process : Randomly generate five dice values for player's first roll
 	 * Output  : rgendice, an array containing five dice values
