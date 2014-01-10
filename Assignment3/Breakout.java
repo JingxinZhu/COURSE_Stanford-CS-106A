@@ -14,14 +14,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import org.omg.CORBA.PRIVATE_MEMBER;
 
-import com.sun.org.apache.xerces.internal.impl.dv.xs.YearDV;
-import com.sun.xml.internal.rngom.digested.DXMLPrinter;
-
-import sun.awt.image.OffScreenImage;
-import sun.net.www.content.audio.x_aiff;
-import sun.tools.tree.ReturnStatement;
 
 public class Breakout extends GraphicsProgram {
 
